@@ -12,9 +12,9 @@ app.use(express.static(publicPath))
 
 
 //rutas : get, post, put, delete
-app.listen(3001,()=>{
+/*app.listen(3001,()=>{
     console.log("servidor escuchando puerto 3001 funcionando")
-})
+})*/
 
 app.get("/",(req,res)=>{
     res.sendFile(path.resolve(__dirname,"./views/home.html"))
