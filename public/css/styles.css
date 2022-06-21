@@ -1,0 +1,474 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #ebebeb;
+}
+
+.cuerpo-tex{
+    font-size: 12px;
+    
+}
+
+/*color de fondo header principal*/
+
+.header-principal{
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+/* formato al logo */
+
+.logo {
+    width: 200px;
+}
+
+
+
+
+
+/*estilo a los titulares*/
+
+
+.titular-vista{
+    
+    font-size: 24px;
+    text-align: center;
+    color: #666;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+.oferta-ti{
+    background-color: #ebebeb;
+}
+.titular-ofer{
+    color: #666;  
+}
+.vita-titular{
+    display: block;
+    background-color: #ebebeb;
+    
+    
+}
+
+.titular-oferta-princial{
+    text-align: center;
+}
+
+/* boton de barra de busqueda*/
+
+.button-sear{
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #666;
+    width: 2em;
+    
+}
+
+
+/* boton de menu de hamburgesa*/
+.burger-menu{
+    background-color: #1259c3;
+    color: #FFF;
+    display: block;
+    max-width: 40px;
+    padding: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    
+}
+
+/* barra de navegacion estilos a las listas */
+.barra-nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+/*estilos de la barra nav elemento enlace*/
+.barra-nav a{
+    text-decoration : none;
+    color: black;
+    display: inline-block;
+    padding: 5px;
+
+}
+
+
+.fa-magnifying-glass{
+    
+    background-color: #FFF;
+}
+
+
+
+.precio {
+    font-size: 18px;
+}
+
+.descuento{
+    font-size: 16px;
+}
+/* descripcion de los articulos*/
+.descrip {
+    font-size: 16px;
+    display: none;
+    font-weight: normal;
+    color: #666;
+    margin-top: 20px;
+}
+
+
+/* footer*/
+footer{
+    background-color:  #FFF; 
+    width: 100%;
+    height: 100%;
+    
+
+}
+footer section {
+    text-align: center;
+    margin: 40px 20px 20px 20px;
+    padding: 20px;
+}
+
+/* iconos footer*/
+.fa-credit-card {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.fa-gift {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.fa-user-shield {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+
+
+main {
+    
+    width: 90%;
+    margin: 0 auto;
+    line-height: 10px;
+    
+}
+article {
+    margin-bottom: 10px;
+    
+}
+
+main section article i,
+.descuento{
+    color: #39b54a;
+}
+
+/* estilos al logo*/
+main section article i{
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position:absolute; 
+    right: 20px;
+    top: -15px;
+    
+}
+
+
+
+
+
+img{
+    width: 100%;
+}
+
+footer{
+    background-color:  #FFF;
+}
+
+/*caja articulo*/
+.caja-articulo {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: #fff;
+}
+main section article {
+    margin: 10px 0px;
+    background-color: #FFF;
+}
+
+.precio-descuento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.precio {
+    width: 30%;
+}
+
+.descuento {
+    width: 70%;
+    
+}
+
+
+.section-articulos{
+    display: flex;
+    flex-direction: column;
+}
+
+article div.caja-articulo{
+    width: 100%;
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: baseline; */
+    position: relative;
+    padding: 10px;
+}
+
+.barra-nav{
+    display: none;
+}
+
+
+@media(min-width:361px){ 
+    
+    main section div{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;          
+    }
+
+    
+    main section article {
+        width: 40%;
+        padding: 10px;
+        justify-content: space-around;
+        margin: 10px auto;    
+    }  
+
+    .caja-articulo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    } 
+    main section div.products article{
+        width: 50%;
+    }
+    
+    main section article{
+        transition: all 0.7s;
+    }
+    /*sombra de tarjetas*/
+    main section article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+    
+    .descrip {
+        display: block;
+        color: #ffff;
+        transition: color 0.7s;
+    }
+    /* mostrar descripcion del articulo*/
+    article:hover .caja-articulo .descrip{
+        color: #666;
+        
+        
+    }
+    /*movimiento logo camion*/
+    main section article:hover i{
+        transform: rotate(-90deg);
+    }
+    main section article:hover i{
+        transition: 3s;
+    }
+   
+    .header-top-bar{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        
+
+    }
+    .logo{
+        width: 50%;
+    
+    }
+    div.form{
+        display: flex;
+        width: 50%;
+        margin: 0px;
+        flex-direction: column;
+        flex-wrap: nowrap;   
+    }
+    
+    h3.titular-oferta-princial{
+        width: 100%;
+    }
+    .input{
+        width: 80%;
+    }
+    .precio,
+    .descuento{
+        width: 50%;
+    }
+}
+
+
+
+@media(min-width:769px){
+
+    /*se agrego de ultimooo*/
+    .articulos-vista{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; 
+        
+    }
+    main section article {
+        width: 22%;
+        padding: 10px;
+        margin: 10px auto;
+        
+        
+        
+        
+    }
+
+    .header-top-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 33%;
+        
+    }
+    div.form{
+        display: block;
+        width: 33%;
+        
+        
+    }
+    h3.titular-oferta-princial{
+        width: 33%;
+    }
+
+    main {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 100%;
+
+    }
+    .titular-oferta-princial{
+        max-width: 350px;
+        text-align: right;
+    }
+
+
+    .burger-menu{
+        display: none;
+    }
+    .barra-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .barra-nav ul {
+        display: flex;
+
+    }
+    .main-navbar {
+        margin: 0 5px;
+    }
+
+    /*footer alineacion */
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+    
+    footer section{
+        width: 29%;
+    }
+    .copy-section{
+        margin: 0px;
+        padding: 5px;
+    }
+    /* animacion iconos*/
+    footer section:hover div i{
+        color: #39b54a;
+
+    }
+    footer section div i{
+        transition: color 1s;
+
+    }
+
+
+}
+
+@media(min-width: 1200px){
+    .logo {
+        width: 250px;
+    }
+    
+    main {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .header-top-bar, .barra-nav {
+        max-width: 1200px;
+        margin: auto;    
+    }
+
+    .header-top-bar{
+        align-items: center;
+        
+    }
+
+    .titular-oferta-principal{
+        max-width: none;
+        font-size: 22px;
+        font-weight: 400;
+        
+    }
+
+    .barra-nav li {
+        margin:  0 10px;
+    }
+    .barra-nav a {
+        font-size: 19px;
+    }
+    .banner img{
+        height: 200px;
+    }
+}

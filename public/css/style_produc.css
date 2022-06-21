@@ -1,0 +1,31 @@
+.create-form {
+    padding: 20px 15px;
+
+}
+
+.contro-formulario {
+    margin-bottom: 15px;
+}
+
+.contro-formulario label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.control {
+    width: 100%;
+    padding: 8px;
+}
+
+.boton-formulario {
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+header.header-principal{
+    position: fixed;
+}

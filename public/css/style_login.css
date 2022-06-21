@@ -1,0 +1,77 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 10px;
+    
+}
+form.formulario div {
+    padding: 10px 0px;
+    width: 100%;
+}
+.inp-usuario, .inp-contrase{
+    border: 2px solid #ebebeb;
+    border-radius: 8px;
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    
+}
+/* estilizando los botones*/
+button{
+    border: 2px solid #ebebeb;
+    border-radius: 8px;
+    height: 40px;
+    width: 100%;
+    background-color: #ffff;
+    color: black;
+}
+/* animacion boton */
+button:hover{
+    background-color: #0022AA;
+    color: #ffff;
+}
+
+button{
+    transition: background-color 1.5s;
+}
+
+/* color para las validaciones de formularios*/
+form.busqueda input:valid{
+    box-shadow: none;
+    
+}
+form.busqueda input:invalid{
+    box-shadow: none;
+    
+}
+
+input:focus:valid{
+    box-shadow: 0 0 6px 2px #39b54a;
+    
+}
+
+
+input:Focus:invalid {
+    box-shadow: 0 0 6px 2px red;
+}
+
+
+@media(min-width:361px){
+    .formulario{
+        width: 70%;
+    }
+
+}
+
+
+
+@media(min-width:769px){
+    .formulario{
+        width: 40%;
+    }
+
+}

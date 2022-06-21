@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a MercadoLiebre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/style_produc.css">
+    <script src="https://kit.fontawesome.com/4b6f922cb1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Barra principal-->
+    <header class="header-principal">
+        <div class="header-top-bar">
+            <!-- <div class="logo-sear"> -->
+                <img class="logo" src="/images/logo-mercado-liebre.svg" alt="logo">
+                <div class="form">
+                    <form action="#" method="GET">
+                        <input class="input" type= "search" name="buscar" placeholder="Buscar productos, marcas" >
+                        <button class="button-sear" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            <!-- </div>     -->
+                <h3 class="titular-oferta-princial">
+                    <i class="fa-solid fa-hand-holding-dollar"></i> 
+                    Comprá en cuotas y sin tarjeta de crédito
+                </h3>
+            
+        </div>
+        <!--boton de hambuguesa-->
+        <a href="#" class="burger-menu"><i class="fa-solid fa-bars"></i></a>
+        <!--barra de navegacion-->
+        <nav class="barra-nav">
+            <ul class="site">
+                <li><a href="/">Ofertas</a></li>
+                <li><a href="/">Tiendas Oficiales</a></li>
+                <li><a href="/">Vender</a></li>
+                <li><a href="/">Ayuda</a></li>
+                
+            </ul>
+            <ul class="login-navbar">
+                <li><a href="/">Creá tu cuenta <i class="fa-solid fa-address-card"></i></a></li>
+                <li><a href="/">Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                <li><a href="/">Mis compras <i class="fa-solid fa-basket-shopping"></i></a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--Formulario-->
+    <form action="/crear-producto" method="POST" class="create-form" >
+        <label>Nombre del producto:</label>
+        <div class="control-formulario">
+            <input type="text" name="nombre" class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Precio:</label>
+            <input type="number" name="precio" placeholder="123.56" class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Categoría</label>
+            <select name="categoria" class="control">
+                <option value="hogar">Hogar</option>
+                <option value="electro">Electro</option>
+                <option value="indumentaria">Indumentaria</option>
+            </select>
+        </div>
+        <div class="control-formulario">
+            <label>Ciudad</label>
+            <select name="ciudad" class="control">
+                <option value="baires">Buenos Aires</option>
+                <option value="ros">Rosario</option>
+                <option value="mdz">Mendoza</option>
+            </select>
+        </div>
+        <div class="control-formulario">
+            <label>Descripción</label>
+            <textarea name="descripcion" class="control"></textarea>
+        </div>
+        <div class="control-formulario">
+            <label>Está en oferta</label>
+            <input type="radio" name="enOferta">
+        </div>
+        <button type="reset" class="boton-formulario">Borrar</button>
+        <button type="submit" class="boton-formulario">Guardar</button>
+        
+    </form>
+
+
+    
+</body>
+</html>
