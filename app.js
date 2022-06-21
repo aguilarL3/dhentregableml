@@ -31,3 +31,9 @@ app.get("/register",(req,res)=>{
 app.get("/login",(req,res)=>{
     res.sendFile(path.resolve(__dirname,"./views/login.html"))
 })
+
+app.set('puerto',process.env.PORT || 3000)
+
+
+
+app.listen(app.get('puerto'), ()=>console.log(`Servidor escuchando en puerto ${app.get('puerto')}`));
